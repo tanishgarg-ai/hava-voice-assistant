@@ -70,9 +70,21 @@ To use wake word detection (Porcupine), you must create a **free account** at [P
 ### Install all Python packages in one step using:
 `pip install -r requirements.txt`
 
-Absolutely! Here's an updated section of the `README.md` that includes a **clear instruction to upload the provided Arduino code to the ESP32**, along with all previous setup info.
 
----
+### 🧠 Vosk Model Setup (Required)
+
+This project uses the offline voice recognition model: `vosk-model-en-in-0.5`.
+
+Please download it from the official site:
+
+👉 [Download Vosk Model (en-in)](https://alphacephei.com/vosk/models)
+
+After downloading:
+- Extract the folder (e.g., `vosk-model-en-in-0.5`)
+- Place it in the project directory or anywhere you'd like
+- Update the path in `main.py` accordingly:
+
+or use the script `python other_files/download_model.py`
 
 ### 🔌 ESP32 Serial Communication Setup
 
@@ -100,7 +112,7 @@ This project **communicates with an ESP32 board via a serial connection** and re
      ```
 
 
----
+
 
 
 
