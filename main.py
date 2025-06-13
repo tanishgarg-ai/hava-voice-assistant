@@ -12,7 +12,7 @@ import threading
 
 # *****************************************************
 # Please set your picovoice access key and the com port of the esp
-picovoice_access_key = "please_enter_your_access_key"
+picovoice_access_key = "please_enter_your_Access_Key"
 
 # *****************************************************
 # -------------------- Serial -------------------------
@@ -21,7 +21,6 @@ import serial  # To enable communication with arduino(esp32)
 ser = serial.Serial('COM18', 115200)  # Change 'COM5' to your  serial port
 # ser = serial.Serial('COM3', 9600)  # Change 'COM3' to your  serial port
 # *****************************************************
-
 
 pygame.mixer.init()
 open_sound = pygame.mixer.Sound("sounds/open_sound.mp3")
